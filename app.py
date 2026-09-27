@@ -121,6 +121,10 @@ CUSTOM_CSS = """
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         border-top: 4px solid #10b981;
         color: var(--text-color, #f1f5f9);
+        min-height: 135px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .metric-label {
         font-size: 0.82rem;
@@ -298,6 +302,7 @@ if section == "🎯 Project Overview":
             <div class="metric-sub">Nationwide coverage</div>
         </div>
         """, unsafe_allow_html=True)
+    with m3:
         best_r2 = 0.9675
         comp_items = comp_data.get('comparison', [])
         if len(comp_items) > 2 and 'test_r2' in comp_items[2]:
