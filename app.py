@@ -12,8 +12,16 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Add src to system path
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+# Setup absolute project paths
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+SRC_DIR = os.path.join(ROOT_DIR, "src")
+MODELS_DIR = os.path.join(ROOT_DIR, "models")
+DATA_DIR = os.path.join(ROOT_DIR, "data")
+
+if SRC_DIR not in sys.path:
+    sys.path.insert(0, SRC_DIR)
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
 
 from data_loader import load_raw_data, audit_dataset
 from preprocessing import CLEANED_DATASET_PATH, clean_crop_data
@@ -290,8 +298,12 @@ if section == "🎯 Project Overview":
             <div class="metric-sub">Nationwide coverage</div>
         </div>
         """, unsafe_allow_html=True)
-    with m3:
-        best_r2 = comp_data.get('comparison', [{}])[2].get('test_r2', 0.9675)
+        best_r2 = 0.9675
+        comp_items = comp_data.get('comparison', [])
+        if len(comp_items) > 2 and 'test_r2' in comp_items[2]:
+            best_r2 = comp_items[2]['test_r2']
+        elif comp_items and 'test_r2' in comp_items[0]:
+            best_r2 = max(m.get('test_r2', 0) for m in comp_items)
         st.markdown(f"""
         <div class="metric-box">
             <div class="metric-label">Predictive Accuracy</div>
@@ -743,7 +755,7 @@ elif section == "📈 ML Model Benchmarks":
     st.markdown("---")
     st.subheader("🧬 Feature Importance: What Drives Crop Yield?")
     
-    feat_imp_path = os.path.join(os.path.dirname(__file__), "models", "feature_importance.json")
+    feat_imp_path = os.path.join(MODELS_DIR, "feature_importance.json")
     if os.path.exists(feat_imp_path):
         with open(feat_imp_path) as f:
             f_data = json.load(f)

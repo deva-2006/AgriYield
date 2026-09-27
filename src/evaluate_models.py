@@ -14,7 +14,8 @@ from plotly.subplots import make_subplots
 
 from eda import THEME_LAYOUT, AGRI_PALETTE
 
-MODELS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "models")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+MODELS_DIR = os.path.join(BASE_DIR, "models")
 COMPARISON_JSON_PATH = os.path.join(MODELS_DIR, "model_comparison.json")
 TEST_PREDICTIONS_PATH = os.path.join(MODELS_DIR, "test_predictions.csv")
 

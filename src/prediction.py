@@ -11,7 +11,8 @@ import pandas as pd
 
 from feature_engineering import engineer_agronomic_features, get_feature_lists
 
-MODELS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "models")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+MODELS_DIR = os.path.join(BASE_DIR, "models")
 BEST_MODEL_PATH = os.path.join(MODELS_DIR, "best_model.pkl")
 
 

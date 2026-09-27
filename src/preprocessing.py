@@ -7,7 +7,8 @@ import os
 import pandas as pd
 import numpy as np
 
-CLEANED_DATASET_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "cleaned_dataset.csv")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+CLEANED_DATASET_PATH = os.path.join(BASE_DIR, "data", "cleaned_dataset.csv")
 
 
 def clean_crop_data(df):
