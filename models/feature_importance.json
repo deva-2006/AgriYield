@@ -1,0 +1,383 @@
+{
+  "Random Forest": {
+    "top_transformed_features": [
+      {
+        "feature": "Crop_Coconut",
+        "importance": 42.775
+      },
+      {
+        "feature": "Crop_Sugarcane",
+        "importance": 18.927
+      },
+      {
+        "feature": "Crop_Potato",
+        "importance": 6.575
+      },
+      {
+        "feature": "Crop_Banana",
+        "importance": 5.106
+      },
+      {
+        "feature": "Crop_Onion",
+        "importance": 4.007
+      },
+      {
+        "feature": "Crop_Tapioca",
+        "importance": 2.86
+      },
+      {
+        "feature": "Area",
+        "importance": 2.536
+      },
+      {
+        "feature": "Log_Area",
+        "importance": 2.202
+      },
+      {
+        "feature": "Crop_Sweet potato",
+        "importance": 2.177
+      },
+      {
+        "feature": "Crop_Jute",
+        "importance": 1.121
+      },
+      {
+        "feature": "Crop_Ginger",
+        "importance": 1.108
+      },
+      {
+        "feature": "Crop_Mesta",
+        "importance": 0.946
+      },
+      {
+        "feature": "Crop_Rice",
+        "importance": 0.9
+      },
+      {
+        "feature": "Crop_Maize",
+        "importance": 0.864
+      },
+      {
+        "feature": "State_Chhattisgarh",
+        "importance": 0.843
+      },
+      {
+        "feature": "Crop_Garlic",
+        "importance": 0.768
+      },
+      {
+        "feature": "Log_Rainfall",
+        "importance": 0.719
+      },
+      {
+        "feature": "Annual_Rainfall",
+        "importance": 0.664
+      },
+      {
+        "feature": "State_Jammu and Kashmir",
+        "importance": 0.479
+      },
+      {
+        "feature": "Crop_Turmeric",
+        "importance": 0.454
+      }
+    ],
+    "grouped_feature_importance_pct": {
+      "Crop": 89.32,
+      "Area": 5.0,
+      "State": 4.0,
+      "Log_Rainfall": 0.72,
+      "Annual_Rainfall": 0.66,
+      "Season": 0.16,
+      "Year_Index": 0.13,
+      "Fertilizer_per_Area": 0.0,
+      "Pesticide_per_Area": 0.0,
+      "Crop_Year": 0.0,
+      "Log_Area": 0.0,
+      "Log_Fertilizer_per_Area": 0.0,
+      "Log_Pesticide_per_Area": 0.0
+    }
+  },
+  "Gradient Boosting": {
+    "top_transformed_features": [
+      {
+        "feature": "Crop_Coconut",
+        "importance": 41.562
+      },
+      {
+        "feature": "Crop_Sugarcane",
+        "importance": 18.261
+      },
+      {
+        "feature": "Crop_Potato",
+        "importance": 6.233
+      },
+      {
+        "feature": "Crop_Banana",
+        "importance": 4.521
+      },
+      {
+        "feature": "Crop_Onion",
+        "importance": 3.82
+      },
+      {
+        "feature": "Area",
+        "importance": 2.978
+      },
+      {
+        "feature": "Crop_Tapioca",
+        "importance": 2.491
+      },
+      {
+        "feature": "Log_Area",
+        "importance": 2.139
+      },
+      {
+        "feature": "Crop_Sweet potato",
+        "importance": 1.796
+      },
+      {
+        "feature": "Season_Whole Year",
+        "importance": 1.732
+      },
+      {
+        "feature": "Crop_Jute",
+        "importance": 1.098
+      },
+      {
+        "feature": "Crop_Ginger",
+        "importance": 0.943
+      },
+      {
+        "feature": "Crop_Mesta",
+        "importance": 0.908
+      },
+      {
+        "feature": "State_Chhattisgarh",
+        "importance": 0.77
+      },
+      {
+        "feature": "Crop_Rice",
+        "importance": 0.702
+      },
+      {
+        "feature": "Log_Rainfall",
+        "importance": 0.672
+      },
+      {
+        "feature": "Crop_Maize",
+        "importance": 0.636
+      },
+      {
+        "feature": "Annual_Rainfall",
+        "importance": 0.509
+      },
+      {
+        "feature": "State_Jammu and Kashmir",
+        "importance": 0.462
+      },
+      {
+        "feature": "Crop_Garlic",
+        "importance": 0.402
+      }
+    ],
+    "grouped_feature_importance_pct": {
+      "Crop": 87.01,
+      "Area": 5.3,
+      "State": 4.34,
+      "Season": 2.0,
+      "Log_Rainfall": 0.67,
+      "Annual_Rainfall": 0.51,
+      "Year_Index": 0.17,
+      "Fertilizer_per_Area": 0.0,
+      "Pesticide_per_Area": 0.0,
+      "Crop_Year": 0.0,
+      "Log_Area": 0.0,
+      "Log_Fertilizer_per_Area": 0.0,
+      "Log_Pesticide_per_Area": 0.0
+    }
+  },
+  "Decision Tree": {
+    "top_transformed_features": [
+      {
+        "feature": "Crop_Coconut",
+        "importance": 44.577
+      },
+      {
+        "feature": "Crop_Sugarcane",
+        "importance": 19.66
+      },
+      {
+        "feature": "Crop_Potato",
+        "importance": 6.826
+      },
+      {
+        "feature": "Crop_Banana",
+        "importance": 5.274
+      },
+      {
+        "feature": "Crop_Onion",
+        "importance": 4.108
+      },
+      {
+        "feature": "Area",
+        "importance": 3.318
+      },
+      {
+        "feature": "Crop_Tapioca",
+        "importance": 2.933
+      },
+      {
+        "feature": "Crop_Sweet potato",
+        "importance": 2.255
+      },
+      {
+        "feature": "Log_Area",
+        "importance": 1.459
+      },
+      {
+        "feature": "Crop_Jute",
+        "importance": 1.143
+      },
+      {
+        "feature": "Crop_Ginger",
+        "importance": 1.134
+      },
+      {
+        "feature": "Crop_Mesta",
+        "importance": 0.98
+      },
+      {
+        "feature": "Crop_Rice",
+        "importance": 0.954
+      },
+      {
+        "feature": "Crop_Maize",
+        "importance": 0.891
+      },
+      {
+        "feature": "Annual_Rainfall",
+        "importance": 0.647
+      },
+      {
+        "feature": "State_Jammu and Kashmir",
+        "importance": 0.604
+      },
+      {
+        "feature": "State_Meghalaya",
+        "importance": 0.415
+      },
+      {
+        "feature": "Log_Rainfall",
+        "importance": 0.4
+      },
+      {
+        "feature": "State_Chhattisgarh",
+        "importance": 0.376
+      },
+      {
+        "feature": "State_Tamil Nadu",
+        "importance": 0.223
+      }
+    ],
+    "grouped_feature_importance_pct": {
+      "Crop": 90.79,
+      "Area": 4.91,
+      "State": 3.1,
+      "Annual_Rainfall": 0.65,
+      "Log_Rainfall": 0.4,
+      "Season": 0.1,
+      "Year_Index": 0.06,
+      "Fertilizer_per_Area": 0.0,
+      "Pesticide_per_Area": 0.0,
+      "Crop_Year": 0.0,
+      "Log_Area": 0.0,
+      "Log_Fertilizer_per_Area": 0.0,
+      "Log_Pesticide_per_Area": 0.0
+    }
+  },
+  "Linear Regression (Ridge)": {
+    "top_coefficients": [
+      {
+        "feature": "Crop_Coconut",
+        "coefficient": 6.7557
+      },
+      {
+        "feature": "Crop_Sugarcane",
+        "coefficient": 2.3515
+      },
+      {
+        "feature": "Crop_Banana",
+        "coefficient": 1.7028
+      },
+      {
+        "feature": "Crop_Tapioca",
+        "coefficient": 1.3522
+      },
+      {
+        "feature": "Crop_Potato",
+        "coefficient": 1.3157
+      },
+      {
+        "feature": "Crop_Onion",
+        "coefficient": 1.1208
+      },
+      {
+        "feature": "Crop_Sweet potato",
+        "coefficient": 1.0184
+      },
+      {
+        "feature": "Crop_Cardamom",
+        "coefficient": -0.9567
+      },
+      {
+        "feature": "Crop_Jute",
+        "coefficient": 0.8713
+      },
+      {
+        "feature": "Crop_Cashewnut",
+        "coefficient": -0.7751
+      },
+      {
+        "feature": "Crop_Mesta",
+        "coefficient": 0.7156
+      },
+      {
+        "feature": "Crop_Coriander",
+        "coefficient": -0.6883
+      },
+      {
+        "feature": "Crop_Sesamum",
+        "coefficient": -0.6774
+      },
+      {
+        "feature": "Crop_Moong(Green Gram)",
+        "coefficient": -0.6694
+      },
+      {
+        "feature": "Crop_Urad",
+        "coefficient": -0.6541
+      },
+      {
+        "feature": "Crop_Black pepper",
+        "coefficient": -0.6498
+      },
+      {
+        "feature": "Crop_Horse-gram",
+        "coefficient": -0.6382
+      },
+      {
+        "feature": "Crop_Linseed",
+        "coefficient": -0.6134
+      },
+      {
+        "feature": "Crop_Niger seed",
+        "coefficient": -0.5996
+      },
+      {
+        "feature": "Crop_Ginger",
+        "coefficient": 0.5967
+      }
+    ]
+  }
+}

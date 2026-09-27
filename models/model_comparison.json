@@ -1,0 +1,92 @@
+{
+  "comparison": [
+    {
+      "model_name": "Linear Regression (Ridge)",
+      "train_r2": 0.5509,
+      "train_rmse": 593.479,
+      "train_mae": 50.368,
+      "cv_r2_mean": 0.5041,
+      "cv_r2_std": 0.032,
+      "test_r2": 0.5966,
+      "test_mse": 292407.977,
+      "test_rmse": 540.748,
+      "test_mae": 43.48
+    },
+    {
+      "model_name": "Decision Tree",
+      "train_r2": 0.9878,
+      "train_rmse": 97.934,
+      "train_mae": 6.797,
+      "cv_r2_mean": 0.9664,
+      "cv_r2_std": 0.0061,
+      "test_r2": 0.948,
+      "test_mse": 37705.133,
+      "test_rmse": 194.178,
+      "test_mae": 13.525
+    },
+    {
+      "model_name": "Random Forest",
+      "train_r2": 0.9582,
+      "train_rmse": 181.004,
+      "train_mae": 7.176,
+      "cv_r2_mean": 0.9157,
+      "cv_r2_std": 0.0774,
+      "test_r2": 0.9675,
+      "test_mse": 23563.663,
+      "test_rmse": 153.505,
+      "test_mae": 10.953
+    },
+    {
+      "model_name": "Gradient Boosting",
+      "train_r2": 0.9764,
+      "train_rmse": 136.057,
+      "train_mae": 10.535,
+      "cv_r2_mean": 0.955,
+      "cv_r2_std": 0.0181,
+      "test_r2": 0.9497,
+      "test_mse": 36468.537,
+      "test_rmse": 190.967,
+      "test_mae": 13.853
+    }
+  ],
+  "cv_fold_scores": {
+    "Linear Regression (Ridge)": [
+      0.4703,
+      0.52,
+      0.4692,
+      0.5541,
+      0.5067
+    ],
+    "Decision Tree": [
+      0.971,
+      0.963,
+      0.9579,
+      0.9752,
+      0.9649
+    ],
+    "Random Forest": [
+      0.8813,
+      0.7783,
+      0.9703,
+      0.9794,
+      0.9691
+    ],
+    "Gradient Boosting": [
+      0.9496,
+      0.9236,
+      0.9583,
+      0.977,
+      0.9665
+    ]
+  },
+  "selected_model": "Random Forest",
+  "selection_criteria": "Minimization of Test Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) under a strictly time-aware temporal holdout test split (2016-2020).",
+  "split_metadata": {
+    "method": "Time-Aware Temporal Split",
+    "train_period": "1997 - 2015",
+    "test_period": "2016 - 2020",
+    "train_samples": 15404,
+    "test_samples": 4285,
+    "test_ratio": 0.218
+  }
+}
